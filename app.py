@@ -9,7 +9,6 @@ import fitz
 import base64
 
 
-
 def rename_pdfs(uploaded_file, progress_bar, index, total_files):
     renamed_count = 0
     same_name_count = 0
@@ -53,6 +52,9 @@ def rename_pdfs(uploaded_file, progress_bar, index, total_files):
     return temp_dir, renamed_count, same_name_count
 
 
+st.title("PDF Renamer")
+
+uploaded_files = st.file_uploader("Upload PDF Files", type=['pdf'], accept_multiple_files=True)
 
 if st.button('Rename PDFs'):
     if uploaded_files:
@@ -79,4 +81,3 @@ if st.button('Rename PDFs'):
         st.write(f"{same_name_count} 🤨 PDFs remained the same.")
     else:
         st.write("No PDF files uploaded.")
-
