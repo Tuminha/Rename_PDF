@@ -57,7 +57,7 @@ uploaded_files = st.file_uploader("Upload PDF Files", type=['pdf'], accept_multi
 
 if st.button('Rename PDFs'):
     if uploaded_files:
-        # Add a spinner while the app is renaming the pdfs
+        # Add a spinner while the app is renaming the pdfs so user sees the progress
         with st.spinner('Renaming PDFs...'):
             pass
         output_dir, renamed_count, same_name_count = rename_pdfs(uploaded_files)
