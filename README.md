@@ -1,10 +1,11 @@
-PDF Renamer 📃🔖
+<h1>PDF Renamer 📃🔖</h1>
+
 As someone who works with thousands of scientific articles, I decided to create a solution for one of the most irritating issues I've faced: poorly named PDF files. So, I built this handy tool using Python and Streamlit!
 
 What does it do? 🤔
 This app renames your PDF files based on their metadata titles, making it easier to manage and locate them. The renamed PDFs are then packed into a zip file for easy download.
 
-How to use it? 🚀
+<h2>How to use it? 🚀</h2>
 Upload your PDF files.
 Click 'Rename PDFs'.
 Download the zip file containing your renamed PDFs.
